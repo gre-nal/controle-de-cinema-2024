@@ -1,0 +1,24 @@
+﻿@{
+ViewData["Title"] = "Editar sala";
+}
+<div class="text-center">
+
+    <h1 class="display-3">Editar sala!</h1>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputNumeroSala1" class="form-label">Numero</label>
+            <input type="number" class="form-control" id="exampleInputNumeroSala1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputCapacidadeSala1" class="form-label">Capacidade</label>
+            <input type="number" class="form-control" id="exampleInputCapacidadeSala1">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" asp-controller="Salas" asp-action="Index" role="button">Voltar</a>
+    </form>
+
+</div>

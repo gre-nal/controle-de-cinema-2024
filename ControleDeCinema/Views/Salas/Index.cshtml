@@ -1,0 +1,55 @@
+﻿@{
+ViewData["Title"] = "Salas";
+}
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Salas" asp-action="Criar">Adicionar sala</a>
+</div>
+
+<div class="text-center">
+    <h1 class="display-2">Listagem de salas!</h1>
+    <hr/>
+    <p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Numero</th>
+            <th scope="col">Capacidade</th>
+        </tr>
+        </thead>
+        <hr/>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>6</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>3</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>1</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr/>
+</div>
