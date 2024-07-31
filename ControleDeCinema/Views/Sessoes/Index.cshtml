@@ -1,9 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Sessões";
 }
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Sessoes" asp-action="Criar">Adicionar sessão</a>
+</div>
 
 <div class="text-center">
-    <h1 class="display-3">Filmes disponíveis!</h1>
+    <h1 class="display-2">Filmes disponíveis!</h1>
     <hr />
     <p>
         <table class="table">
@@ -15,27 +18,46 @@
                     <th scope="col">Ingressos disponíveis</th>
                 </tr>
             </thead>
+            <hr />
             <tbody>
                 <tr>
                     <th scope="row">1</th>
                     <td>Teste</td>
                     <td>Teste</td>
                     <td>Teste</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-secondary" role="button" asp-controller="Sessoes" asp-action="Editar" >Editar</a>
+                            <a class="btn btn-danger" role="button" asp-controller="Sessoes" asp-action="Apagar_Confirmacao">Apagar</a>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Teste</td>
                     <td>Teste</td>
                     <td>Teste</td>
+    <td>
+        <div class="btn-group" role="group">
+            <a class="btn btn-secondary" role="button" asp-controller="Sessoes" asp-action="Editar" >Editar</a>
+                            <a class="btn btn-danger" role="button" asp-controller="Sessoes" asp-action="Apagar_Confirmacao">Apagar</a>
+        </div>
+    </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Teste</td>
                     <td>Teste</td>
                     <td>Teste</td>
+                    <td>
+                    <div class="btn-group" role="group">
+                            <a class="btn btn-secondary" role="button" asp-controller="Sessoes" asp-action="Editar" >Editar</a>
+                            <a class="btn btn-danger" role="button" asp-controller="Sessoes" asp-action="Apagar_Confirmacao">Apagar</a>
+                    </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <hr />
     </p>
+    <hr />
 </div>

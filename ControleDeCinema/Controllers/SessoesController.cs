@@ -5,8 +5,23 @@ namespace ControleDeCinema.Controllers
     public class SessoesController : Controller
     {
         public IActionResult Index()
-        {
-            return View();
-        }
+            {
+                return View();
+            }
+
+        public IActionResult Criar()
+            {
+                return View();
+            }
+
+        public IActionResult Editar()
+            {
+                return View();
+            }
+
+        public IActionResult Apagar_Confirmacao()
+            {
+                return View();
+            }
     }
 }

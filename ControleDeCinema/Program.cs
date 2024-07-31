@@ -1,3 +1,6 @@
+using ControleDeCinema.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace ControleDeCinema
 {
     public class Program
