@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Filmes";
+}
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Filmes" asp-action="Criar">Adicionar filme</a>
+</div>
+
+<div class="text-center">
+    <h1 class="display-2">Listagem de filmes!</h1>
+    <hr/>
+    <p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Título</th>
+                <th scope="col">Genêro</th>
+                <th scope="col">Duração</th>
+                <th scope="col">Estréia</th>
+            </tr>
+            </thead>
+            <hr/>
+            <tbody>
+            <tr>
+                <th scope="row">Teste</th>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Filmes" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Teste</th>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Filmes" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Teste</th>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Filmes" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Filmes" asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </p>
+    <hr/>
+</div>

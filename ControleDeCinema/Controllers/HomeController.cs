@@ -10,8 +10,8 @@ namespace ControleDeCinema.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        
+        public IActionResult Criar()
         {
             return View();
         }

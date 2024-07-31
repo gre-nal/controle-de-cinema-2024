@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Listagem de funcionários";
+}
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Funcionarios" asp-action="Criar">Adicionar funcionário</a>
+</div>
+
+<div class="text-center">
+    <h1 class="display-2">Listagem de funcionários!</h1>
+    <hr/>
+    <p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Login</th>
+            <th scope="col">Senha</th>
+        </tr>
+        </thead>
+        <hr/>
+        <tbody>
+        <tr>
+            <th scope="row">Teste</th>
+            <td>Teste</td>
+            <td>Teste</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Funcionarios"
+                       asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Teste</th>
+            <td>Teste</td>
+            <td>Teste</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Funcionarios"
+                       asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Teste</th>
+            <td>Teste</td>
+            <td>Teste</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Funcionarios"
+                       asp-action="Apagar_Confirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </p>
+</div>

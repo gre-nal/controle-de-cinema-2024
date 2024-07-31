@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Remove="Models\Sessoes\**" />
     <Compile Remove="Controllers\Sessoes\**" />
+    <Compile Remove="Views\Home\Criar.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,35 @@
+﻿@{
+ViewData["Title"] = "Editar filme";
+}
+<div class="text-center">
+
+    <h1 class="display-3">Editar filme!</h1>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputTitulo1" class="form-label">Título:</label>
+            <input type="text" class="form-control" id="exampleInputTitulo1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputGenero1" class="form-label">Genêro:</label>
+            <input type="text" class="form-control" id="exampleInputGenero1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputDuracaoFilme1" class="form-label">Duração:</label>
+            <input type="text" class="form-control" id="exampleInputDuracaoFilme1">
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Estréia:
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" asp-controller="Filmes" asp-action="Index" role="button">Voltar</a>
+    </form>
+
+</div>
