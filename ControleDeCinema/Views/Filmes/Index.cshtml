@@ -1,13 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Filmes";
 }
-<div>
-    <a class="btn btn-primary" role="button" asp-controller="Filmes" asp-action="Criar">Adicionar filme</a>
-</div>
+
 
 <div class="text-center">
     <h1 class="display-2">Listagem de filmes!</h1>
     <hr/>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <a type="button" class="btn btn-primary" asp-controller="Filmes" asp-action="Criar">Adicionar filme</a>
+        <a type="button" class="btn btn-secondary" asp-controller="Filmes" asp-action="Criar_Genero">Adicionar genêro</a>
+    </div>
+    
     <p>
         <table class="table">
             <thead>

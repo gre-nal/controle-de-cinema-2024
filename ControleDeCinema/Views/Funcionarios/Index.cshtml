@@ -1,20 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Listagem de funcionários";
 }
-<div>
-    <a class="btn btn-primary" role="button" asp-controller="Funcionarios" asp-action="Criar">Adicionar funcionário</a>
-</div>
 
 <div class="text-center">
     <h1 class="display-2">Listagem de funcionários!</h1>
     <hr/>
+    <div class="btn-group">
+        <a class="btn btn-primary" role="button" asp-controller="Funcionarios" asp-action="Criar">Adicionar
+            funcionário</a>
+
+        <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Relatorio_Diario">Relatório
+            do dia</a>
+        
+        <a class="btn btn-danger" role="button" asp-controller="Funcionarios" asp-action="Relatorio_Sessao">Relatório de
+            sessões</a>
+    </div>
+    
     <p>
     <table class="table">
         <thead>
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Login</th>
-            <th scope="col">Senha</th>
         </tr>
         </thead>
         <hr/>
@@ -22,7 +29,6 @@
         <tr>
             <th scope="row">Teste</th>
             <td>Teste</td>
-            <td>Teste</td>
             <td>
                 <div class="btn-group" role="group">
                     <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Editar">Editar</a>
@@ -34,7 +40,6 @@
         <tr>
             <th scope="row">Teste</th>
             <td>Teste</td>
-            <td>Teste</td>
             <td>
                 <div class="btn-group" role="group">
                     <a class="btn btn-secondary" role="button" asp-controller="Funcionarios" asp-action="Editar">Editar</a>
@@ -45,7 +50,6 @@
         </tr>
         <tr>
             <th scope="row">Teste</th>
-            <td>Teste</td>
             <td>Teste</td>
             <td>
                 <div class="btn-group" role="group">

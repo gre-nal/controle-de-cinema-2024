@@ -23,5 +23,20 @@ namespace ControleDeCinema.Controllers
             {
                 return View();
             }
+        
+        public IActionResult Apagar()
+            {
+                return View();
+            }
+        
+        public IActionResult Detalhes()
+            {
+                return View();
+            }
+        
+        public IActionResult Vender_Ingresso()
+            {
+                return View();
+            }
     }
 }

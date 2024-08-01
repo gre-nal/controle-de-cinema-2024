@@ -30,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Sessoes\Comprar_Ingresso.cshtml" />
     <None Remove="Models\Sessoes\**" />
     <None Remove="Controllers\Sessoes\**" />
   </ItemGroup>
@@ -39,6 +38,7 @@
     <Compile Remove="Models\Sessoes\**" />
     <Compile Remove="Controllers\Sessoes\**" />
     <Compile Remove="Views\Home\Criar.cs" />
+    <Compile Remove="Views\Funcionarios\Relatorio_Diario.cs" />
   </ItemGroup>
 
   <ItemGroup>

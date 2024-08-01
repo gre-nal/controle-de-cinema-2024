@@ -23,5 +23,15 @@ namespace ControleDeCinema.Controllers
         {
             return View();
         }
+        
+        public IActionResult Apagar()
+        {
+            return View();
+        }
+        
+        public IActionResult Criar_Genero()
+        {
+            return View();
+        }
     }
 }

@@ -1,9 +1,6 @@
 ﻿@{
 ViewData["Title"] = "Salas";
 }
-<div>
-    <a class="btn btn-primary" role="button" asp-controller="Salas" asp-action="Criar">Adicionar sala</a>
-</div>
 
 <div class="text-center">
     <h1 class="display-2">Listagem de salas!</h1>
@@ -11,45 +8,24 @@ ViewData["Title"] = "Salas";
     <p>
     <table class="table">
         <thead>
-        <tr>
-            <th scope="col">Numero</th>
-            <th scope="col">Capacidade</th>
-        </tr>
+        <div>
+            <a class="btn btn-primary" role="button" asp-controller="Salas" asp-action="Criar">Adicionar sala</a>
+        </div>
         </thead>
         <hr/>
         <tbody>
-        <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>
-                <div class="btn-group" role="group">
-                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
-                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sala 1</h5>
+                    <p class="card-text">Capacidade</p>
+                    <a class="btn btn-secondary" role="button" asp-controller="Salas"
+                       asp-action="Editar">Editar</a>
+                    <a class="btn btn-danger" role="button" asp-controller="Salas"
+                       asp-action="Apagar_Confirmacao">Apagar</a>
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>
-                <div class="btn-group" role="group">
-                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
-                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>
-                <div class="btn-group" role="group">
-                    <a class="btn btn-secondary" role="button" asp-controller="Salas" asp-action="Editar">Editar</a>
-                    <a class="btn btn-danger" role="button" asp-controller="Salas" asp-action="Apagar_Confirmacao">Apagar</a>
-                </div>
-            </td>
-        </tr>
-        </tbody>
+            </div>
+        </div>
     </table>
-    </p>
-    <hr/>
 </div>
+<hr/>

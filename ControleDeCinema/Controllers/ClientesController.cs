@@ -2,24 +2,20 @@
 
 namespace ControleDeCinema.Controllers
 {
-    public class FuncionariosController : Controller
+    public class ClientesController : Controller
     {
+        // GET
         public IActionResult Index()
         {
             return View();
         }
-
+        
         public IActionResult Criar()
         {
             return View();
         }
-
+        
         public IActionResult Editar()
-        {
-            return View();
-        }
-
-        public IActionResult Apagar_Confirmacao()
         {
             return View();
         }
@@ -29,12 +25,7 @@ namespace ControleDeCinema.Controllers
             return View();
         }
         
-        public IActionResult Relatorio_Diario()
-        {
-            return View();
-        }
-
-        public IActionResult Relatorio_Sessao()
+        public IActionResult Apagar_Confirmacao()
         {
             return View();
         }
