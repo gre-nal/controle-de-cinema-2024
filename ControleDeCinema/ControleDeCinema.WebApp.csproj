@@ -7,43 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Sessoes\Comprar_Ingresso.cshtml" />
-    <Content Remove="Models\Sessoes\**" />
-    <Content Remove="Controllers\Sessoes\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Sessoes\Comprar_Ingresso.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Sessoes\Comprar_Ingresso.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Models\Sessoes\**" />
-    <None Remove="Controllers\Sessoes\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Models\Sessoes\**" />
-    <Compile Remove="Controllers\Sessoes\**" />
-    <Compile Remove="Views\Home\Criar.cs" />
-    <Compile Remove="Views\Funcionarios\Relatorio_Diario.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="Models\Sessoes\**" />
-    <EmbeddedResource Remove="Controllers\Sessoes\**" />
+    <ProjectReference Include="..\ControleDeCinema.Data\ControleDeCinema.Infra.csproj" />
   </ItemGroup>
 
 </Project>

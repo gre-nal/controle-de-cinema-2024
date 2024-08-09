@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Dominio", "2. Dominio", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infra", "3. Infra", "{193B10A6-388B-443D-8359-A4206E8BCDA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeCinema.Domain", "ControleDeCinema.Domain\ControleDeCinema.Domain.csproj", "{1C2DAE7A-97A6-4336-A3D3-D5F3FFE40F35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeCinema.Dominio", "ControleDeCinema.Domain\ControleDeCinema.Dominio.csproj", "{1C2DAE7A-97A6-4336-A3D3-D5F3FFE40F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeCinema.Data", "ControleDeCinema.Data\ControleDeCinema.Data.csproj", "{D8511DD2-A3AA-46D4-83A4-C5F05CAFD827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleDeCinema.Infra", "ControleDeCinema.Data\ControleDeCinema.Infra.csproj", "{D8511DD2-A3AA-46D4-83A4-C5F05CAFD827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

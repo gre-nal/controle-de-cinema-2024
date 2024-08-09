@@ -1,37 +1,37 @@
-using ControleDeCinema.Data;
-using Microsoft.EntityFrameworkCore;
+using ControleDeCinema.Dominio.ModuloFilme;
+using ControleDeCinema.Dominio.ModuloGenero;
+using ControleDeCinema.Dominio.ModuloSala;
+using ControleDeCinema.Dominio.ModuloSessao;
+using ControleDeCinema.Infra.Compartilhado;
+using ControleDeCinema.Infra.Filmes;
+using ControleDeCinema.Infra.Generos;
+using ControleDeCinema.Infra.Salas;
+using ControleDeCinema.Infra.Sessoes;
 
-namespace ControleDeCinema
+namespace ControleDeCinema.WebApp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            var app = builder.Build();
+            #region Injeção de Dependência de Serviços
+            builder.Services.AddDbContext<ControleCinemaDbContext>();
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+            builder.Services.AddScoped<IRepositorioGenero, RepositorioGeneroEmOrm>();
+            builder.Services.AddScoped<IRepositorioFilme, RepositorioFilmeEmOrm>();
+            builder.Services.AddScoped<IRepositorioSala, RepositorioSalaEmOrm>();
+            builder.Services.AddScoped<IRepositorioSessao, RepositorioSessaoEmOrm>();
+            #endregion
 
-            app.UseHttpsRedirection();
+            WebApplication app = builder.Build();
+
             app.UseStaticFiles();
 
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+            app.MapControllerRoute("default", "{controller=Inicio}/{action=Index}/{id:int?}");
 
             app.Run();
         }
